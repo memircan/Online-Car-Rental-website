@@ -10087,11 +10087,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\AracKiralama.csproj",
+      "projectUniqueName": "C:\\Users\\etame\\GitHub\\AracKiralama\\AracKiralama\\AracKiralama.csproj",
       "projectName": "AracKiralama",
-      "projectPath": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\AracKiralama.csproj",
+      "projectPath": "C:\\Users\\etame\\GitHub\\AracKiralama\\AracKiralama\\AracKiralama.csproj",
       "packagesPath": "C:\\Users\\etame\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\obj\\",
+      "outputPath": "C:\\Users\\etame\\GitHub\\AracKiralama\\AracKiralama\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\etame\\AppData\\Roaming\\NuGet\\NuGet.Config",
