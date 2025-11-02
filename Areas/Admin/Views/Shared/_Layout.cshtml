@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@ViewData["Title"] - Yönetim Paneli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/css/OverlayScrollbars.min.css" integrity="sha256-WKijf8KI68sbq8Znd6yMepIuFF0wdWfIt6gk3JWcQfk=" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="~/lib/adminlte/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body class="layout-fixed">
+    <div class="wrapper">
+        <nav class="main-header navbar navbar-expand navbar-light">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-lte-toggle="sidebar-full" href="#" role="button"><i class="fas fa-bars"></i></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown user-menu">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img src="~/img/no_author-72x72.png" class="user-image img-circle shadow" alt="User Image">
+                            <span class="d-none d-md-inline">@User.FindFirst(System.Security.Claims.ClaimTypes.Name).Value</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
+                            <li class="user-header bg-primary">
+                                <img src="~/img/no_author-72x72.png" class="img-circle shadow" alt="User Image">
+
+                                <p>
+                                    @User.FindFirst(System.Security.Claims.ClaimTypes.Name).Value
+                                </p>
+                            </li>
+                            <li class="user-footer text-center">
+                                <a asp-action="cikisyap" asp-controller="kullanici" asp-area="" class="btn btn-default btn-flat">Çıkış Yap</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <aside class="main-sidebar sidebar-bg-dark sidebar-color-primary shadow">
+            <div class="brand-container">
+                <a href="/" class="brand-link">
+                    <span class="brand-text fw-light">Yönetim Paneli</span>
+                </a>
+                <a class="pushmenu mx-1" data-lte-toggle="sidebar-mini" href="javascript:;" role="button"><i class="fas fa-angle-double-left"></i></a>
+            </div>
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item">
+                            <a asp-controller="home" asp-action="index" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt fa-fw"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <i class="nav-icon fas fa-car-side fa-fw"></i>
+                                <p>
+                                    Araba İşlemleri
+                                    <i class="end fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a asp-controller="araba" asp-action="index" class="nav-link">
+                                        <i class="nav-icon far fa-circle"></i>
+                                        <p>Araba Listesi</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="araba" asp-action="ekle" class="nav-link">
+                                        <i class="nav-icon far fa-circle"></i>
+                                        <p>Araba Ekle</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="nav-link">
+                                <i class="nav-icon fas fa-user fa-fw"></i>
+                                <p>
+                                    Müşteri İşlemleri
+                                    <i class="end fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a asp-controller="musteri" asp-action="index" class="nav-link">
+                                        <i class="nav-icon far fa-circle"></i>
+                                        <p>Müşteri Listesi</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="musteri" asp-action="ekle" class="nav-link">
+                                        <i class="nav-icon far fa-circle"></i>
+                                        <p>Müşteri Ekle</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li class="nav-item">
+                            <a asp-controller="kiralama" asp-action="index" class="nav-link">
+                                <i class="nav-icon fas fa-cart-shopping fa-fw"></i>
+                                <p>Kiralama İşlemleri</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <main class="content-wrapper">
+            @RenderBody()
+        </main>
+        <footer class="main-footer">
+            <strong>&copy; 2022</strong> Tüm Hakları Saklıdır.
+        </footer>
+    </div>
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/js/OverlayScrollbars.min.js" integrity="sha256-7mHsZb07yMyUmZE5PP1ayiSGILxT6KyU+a/kTDCWHA8=" crossorigin="anonymous"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/adminlte/js/adminlte.min.js"></script>
+    <script>
+        var url = window.location.toString().split('/', 6).join('/');
+        $('ul.nav-sidebar a').filter(function() {
+            return this.href == url;
+        }).addClass('active');
+
+        $('ul.nav-treeview a').filter(function() {
+            return this.href == url;
+        }).parentsUntil(".nav-sidebar > .nav-treeview")
+        .prev('a').addClass('active').parent().addClass('menu-open menu-is-open');
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

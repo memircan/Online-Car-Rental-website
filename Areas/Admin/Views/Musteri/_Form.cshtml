@@ -1,0 +1,41 @@
+﻿@model MusteriVM
+<div class="mb-3">
+    <label for="input-tc" class="form-label">T.C. Kimlik Numarası</label>
+    <input type="text" class="form-control" id="input-tc" asp-for="TCKimlikNo">
+    <span asp-validation-for="TCKimlikNo" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label for="input-adi" class="form-label">Adı</label>
+    <input type="text" class="form-control" id="input-adi" asp-for="Adi">
+    <span asp-validation-for="Adi" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label for="input-soyadi" class="form-label">Soyadı</label>
+    <input type="text" class="form-control" id="input-soyadi" asp-for="Soyadi">
+    <span asp-validation-for="Soyadi" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label for="input-tel" class="form-label">Telefon</label>
+    <input type="text" class="form-control" id="input-tel" asp-for="TelNo">
+    <span asp-validation-for="TelNo" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label for="input-email" class="form-label">E-Mail Adresi</label>
+    <input type="email" class="form-control" id="input-email" asp-for="Email">
+    <span asp-validation-for="Email" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label for="input-adres" class="form-label">Adres</label>
+    <textarea class="form-control" id="input-soyadi" asp-for="Adres"></textarea>
+    <span asp-validation-for="Adres" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label for="input-ehliyetNo" class="form-label">Ehliyet No</label>
+    <input type="text" class="form-control" id="input-ehliyetNo" asp-for="EhliyetNo">
+    <span asp-validation-for="EhliyetNo" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label for="input-ehliyetTip" class="form-label">Ehliyet Türü</label>
+    <input type="text" class="form-control" id="input-ehliyetTip" asp-for="EhliyetTuru">
+    <span asp-validation-for="EhliyetTuru" class="text-danger"></span>
+</div>

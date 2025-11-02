@@ -1,0 +1,284 @@
+﻿@{
+    ViewData["Title"] = "Kiralama İşlemleri";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <div class="fs-3">Kiralama İşlemleri</div>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-end">
+                    <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Kiralama İşlemleri</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Kiralamaya Uygun Araçlar</h5>
+                        <table id="table-kira"
+                               data-toggle="table"
+                               data-buttons-align="left"
+                               data-search="true"
+                               data-show-search-clear-button="true"
+                               data-id-field="id"
+                               data-unique-id="id"
+                               data-locale="tr-TR">
+                            <thead>
+                                <tr>
+                                    <th data-field="id" data-visible="false">Id</th>
+                                    <th data-field="plaka" data-sortable="true" data-width="150">Araba Plakası</th>
+                                    <th data-field="marka" data-sortable="true">Marka</th>
+                                    <th data-field="model" data-sortable="true">Model</th>
+                                    <th data-field="yil" data-sortable="true" data-width="80">Yıl</th>
+                                    <th data-field="operate" data-events="operateEventsKira" data-align="center" data-width="100"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if ((ViewData["UygunArabalar"] as List<ArabaVM>) != null)
+                                {
+                                    foreach (var item in (ViewData["UygunArabalar"] as List<ArabaVM>))
+                                    {
+                                        <tr>
+                                            <td>@item.Id</td>
+                                            <td>@item.Plaka</td>
+                                            <td>@item.Marka</td>
+                                            <td>@item.Model</td>
+                                            <td>@item.Yil</td>
+                                            <td>
+                                                <a class="btn-kirala" title="Kirala" style="cursor:pointer;">
+                                                    <i class="fa-solid fa-cart-shopping fa-fw"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Kiradaki Araçlar</h5>
+                        <table id="table-iade"
+                               data-toggle="table"
+                               data-buttons-align="left"
+                               data-search="true"
+                               data-show-search-clear-button="true"
+                               data-id-field="id"
+                               data-unique-id="id"
+                               data-locale="tr-TR">
+                            <thead>
+                                <tr>
+                                    <th data-field="id" data-visible="false">Id</th>
+                                    <th data-field="plaka" data-sortable="true" data-width="150">Araba Plakası</th>
+                                    <th data-field="marka" data-sortable="true">Marka</th>
+                                    <th data-field="model" data-sortable="true">Model</th>
+                                    <th data-field="musteri" data-sortable="true">Müşteri</th>
+                                    <th data-field="baslangic" data-sortable="true">Başlangıç Tarihi</th>
+                                    <th data-field="bitis" data-sortable="true">Bitiş Tarihi</th>
+                                    <th data-field="tutar" data-sortable="true">Tutar</th>
+                                    <th data-field="operate" data-events="operateEventsIade" data-align="center" data-width="100"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if ((ViewData["KiradakiArabalar"] as List<KiraVM>) != null)
+                                {
+                                    foreach (var item in (ViewData["KiradakiArabalar"] as List<KiraVM>))
+                                    {
+                                        <tr>
+                                            <td>@item.Id</td>
+                                            <td>@item.Araba.Plaka</td>
+                                            <td>@item.Araba.Marka</td>
+                                            <td>@item.Araba.Model</td>
+                                            <td>@(item.Musteri.Adi + " " + item.Musteri.Soyadi)</td>
+                                            <td>@item.BaslangicTarihi</td>
+                                            <td>@item.BitisTarihi</td>
+                                            <td>@item.Tutar</td>
+                                            <td>
+                                                <a class="btn-teslim-al text-danger" style="cursor:pointer;" title="Teslim Al">
+                                                    <i class="fa-solid fa-rotate-left fw-fw"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Geçmiş İşlemler</h5>
+                        <table id="table-iade"
+                               data-toggle="table"
+                               data-buttons-align="left"
+                               data-search="true"
+                               data-show-search-clear-button="true"
+                               data-id-field="id"
+                               data-unique-id="id"
+                               data-locale="tr-TR">
+                            <thead>
+                                <tr>
+                                    <th data-field="id" data-visible="false">Id</th>
+                                    <th data-field="plaka" data-sortable="true" data-width="150">Araba Plakası</th>
+                                    <th data-field="marka" data-sortable="true">Marka</th>
+                                    <th data-field="model" data-sortable="true">Model</th>
+                                    <th data-field="musteri" data-sortable="true">Müşteri</th>
+                                    <th data-field="baslangic" data-sortable="true">Başlangıç Tarihi</th>
+                                    <th data-field="bitis" data-sortable="true">Bitiş Tarihi</th>
+                                    <th data-field="teslim" data-sortable="true">Teslim Tarihi</th>
+                                    <th data-field="tutar" data-sortable="true">Tutar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if ((ViewData["TeslimEdilenArabalar"] as List<KiraVM>) != null)
+                                {
+                                    foreach (var item in (ViewData["TeslimEdilenArabalar"] as List<KiraVM>))
+                                    {
+                                        <tr>
+                                            <td>@item.Id</td>
+                                            <td>@item.Araba.Plaka</td>
+                                            <td>@item.Araba.Marka</td>
+                                            <td>@item.Araba.Model</td>
+                                            <td>@(item.Musteri.Adi + " " + item.Musteri.Soyadi)</td>
+                                            <td>@item.BaslangicTarihi</td>
+                                            <td>@item.BitisTarihi</td>
+                                            <td>@item.TeslimTarihi</td>
+                                            <td>@item.Tutar</td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-kira" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-kira-label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <partial name="_Form" model="new KiraVM()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Styles {
+<link href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="~/lib/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<style>
+    .btn-toolbar button:focus {
+        box-shadow: none;
+    }
+</style>
+}
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+<script src="~/lib/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="~/lib/bootstrap-table/bootstrap-table-locale-all.min.js"></script>
+<script src="~/lib/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script>
+    var $tableKira = $('#table-kira');
+    var $tableIade = $('#table-iade');
+
+    var kiraModal = document.getElementById('modal-kira')
+
+    window.operateEventsKira = {
+        'click .btn-kirala': function (e, value, row, index) {
+            kiraModal.querySelector('#input-araba-id').value = row.id;
+            kiraModal.querySelector('#input-plaka').value = row.plaka;
+            kiraModal.querySelector('#input-marka').value = row.marka;
+            kiraModal.querySelector('#input-model').value = row.model;
+
+            $('#modal-kira').modal('show')
+        },
+    }
+
+    window.operateEventsIade = {
+        'click .btn-teslim-al': function (e, value, row, index) {
+            Swal.fire({
+                title: 'Emin misiniz?',
+                html: '<strong>"' + row.plaka + '"</strong> plakalı araba teslim alınacaktır.<br/><br/>Bu işlemi gerçekleştirmek istiyor musunuz?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#198754',
+                denyButtonColor: '#d33',
+                confirmButtonText: '<i class="fa-solid fa-check fa-fw"></i> Evet!',
+                focusConfirm: false,
+                cancelButtonText: 'İptal',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("teslimal")',
+                        data: {
+                            id: row.id
+                        },
+                        success: function (result) {
+                            if (result.isValid) {
+                                Swal.fire({
+                                    title: 'İşlem Başarılı!',
+                                    html: 'Araba başarıyla teslim alındı.',
+                                    confirmButtonText: '<i class="fa-solid fa-thumbs-up fa-fw"></i> Tamam!',
+                                    icon: 'success'
+                                }).then(function () {
+                                    window.location.reload();
+                                });
+                            }
+                            else {
+                                Swal.fire(
+                                    'Hata Oluştu!',
+                                    result.errorMessage,
+                                    'error'
+                                )
+                            }
+                        }
+                    });
+                }
+            })
+        },
+    }
+
+    $("#form-kirala").on('submit', function(e){
+        e.preventDefault();
+        if($(this).valid()){
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("kirala")',
+                data: $(this).serialize(),
+                success: function (result) {
+                    if (result.isValid) {
+                        Swal.fire({
+                            title: 'İşlem Başarılı!',
+                            html: 'Araba seçilen müşteriye kiraya verildi.',
+                            confirmButtonText: '<i class="fa-solid fa-thumbs-up fa-fw"></i> Tamam!',
+                            icon: 'success'
+                        }).then(function () {
+                            window.location.reload();
+                        });
+                    }
+                    else {
+                        Swal.fire(
+                            'Hata Oluştu!',
+                            result.errorMessage,
+                            'error'
+                        )
+                    }
+                }
+            });
+        }
+    })
+</script>
+}

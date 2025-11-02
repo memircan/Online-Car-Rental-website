@@ -1,0 +1,45 @@
+﻿@model ArabaVM
+@{
+    ViewData["Title"] = "Düzenle";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <div class="fs-3">Düzenle</div>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-end">
+                    <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
+                    <li class="breadcrumb-item"><a asp-action="index">Araba Listesi</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Düzenle</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form asp-action="duzenle">
+                            <input type="hidden" value="@Model.Id" />
+                            <partial name="_Form" model="Model" />
+                            <div class="d-flex flex-column align-items-center mb-3">
+                                <button type="submit" class="btn btn-success btn-labeled">
+                                    <span class="btn-label"><i class="fa-solid fa-pencil fa-fw"></i></span>
+                                    <span class="btn-text">Düzenle</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}

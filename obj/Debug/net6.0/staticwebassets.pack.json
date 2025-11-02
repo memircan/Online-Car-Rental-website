@@ -1,0 +1,617 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\about-fullscreen-1-1920x700.jpg",
+      "PackagePath": "staticwebassets\\img\\about-fullscreen-1-1920x700.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\about-image-1-940x460.jpg",
+      "PackagePath": "staticwebassets\\img\\about-image-1-940x460.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\about-image-2-940x460.jpg",
+      "PackagePath": "staticwebassets\\img\\about-image-2-940x460.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\about-image-3-940x460.jpg",
+      "PackagePath": "staticwebassets\\img\\about-image-3-940x460.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\banner-image-1-1920x500.jpg",
+      "PackagePath": "staticwebassets\\img\\banner-image-1-1920x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\blog-image-1-940x460.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-image-1-940x460.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\blog-image-2-940x460.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-image-2-940x460.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\blog-image-3-940x460.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-image-3-940x460.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\blog-image-fullscren-1-1920x700.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-image-fullscren-1-1920x700.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\contact-1-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\contact-1-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\features-first-icon.png",
+      "PackagePath": "staticwebassets\\img\\features-first-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\line-dec.png",
+      "PackagePath": "staticwebassets\\img\\line-dec.png"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\no_author-72x72.png",
+      "PackagePath": "staticwebassets\\img\\no_author-72x72.png"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\offer-1-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\offer-1-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\offer-2-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\offer-2-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\offer-3-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\offer-3-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\offer-4-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\offer-4-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\offer-5-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\offer-5-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\offer-6-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\offer-6-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\product-1-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\product-1-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\product-2-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\product-2-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\product-3-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\product-3-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\product-4-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\product-4-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\product-5-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\product-5-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\product-6-720x480.jpg",
+      "PackagePath": "staticwebassets\\img\\product-6-720x480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\team-image-1-646x680.jpg",
+      "PackagePath": "staticwebassets\\img\\team-image-1-646x680.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\team-image-2-646x680.jpg",
+      "PackagePath": "staticwebassets\\img\\team-image-2-646x680.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\team-image-3-646x680.jpg",
+      "PackagePath": "staticwebassets\\img\\team-image-3-646x680.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\img\\team-image-4-646x680.jpg",
+      "PackagePath": "staticwebassets\\img\\team-image-4-646x680.jpg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\js\\accordions.js",
+      "PackagePath": "staticwebassets\\js\\accordions.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\js\\imgfix.min.js",
+      "PackagePath": "staticwebassets\\js\\imgfix.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\js\\mixitup.js",
+      "PackagePath": "staticwebassets\\js\\mixitup.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\js\\scrollreveal.min.js",
+      "PackagePath": "staticwebassets\\js\\scrollreveal.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\adminlte\\css\\adminlte.min.css",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\css\\adminlte.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\adminlte\\css\\adminlte.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\css\\adminlte.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\adminlte\\js\\adminlte.min.js",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\js\\adminlte.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\adminlte\\js\\adminlte.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\js\\adminlte.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-icons\\font\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\bootstrap-table-locale-all.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\bootstrap-table-locale-all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\bootstrap-table.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\bootstrap-table.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\bootstrap-table.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\bootstrap-table.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\addrbar\\bootstrap-table-addrbar.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\addrbar\\bootstrap-table-addrbar.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\addrbar\\bootstrap-table-addrbar.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\addrbar\\bootstrap-table-addrbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\auto-refresh\\bootstrap-table-auto-refresh.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\auto-refresh\\bootstrap-table-auto-refresh.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\auto-refresh\\bootstrap-table-auto-refresh.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\auto-refresh\\bootstrap-table-auto-refresh.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\cookie\\bootstrap-table-cookie.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\cookie\\bootstrap-table-cookie.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\cookie\\bootstrap-table-cookie.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\cookie\\bootstrap-table-cookie.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\copy-rows\\bootstrap-table-copy-rows.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\copy-rows\\bootstrap-table-copy-rows.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\copy-rows\\bootstrap-table-copy-rows.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\copy-rows\\bootstrap-table-copy-rows.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\custom-view\\bootstrap-table-custom-view.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\custom-view\\bootstrap-table-custom-view.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\custom-view\\bootstrap-table-custom-view.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\custom-view\\bootstrap-table-custom-view.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\defer-url\\bootstrap-table-defer-url.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\defer-url\\bootstrap-table-defer-url.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\defer-url\\bootstrap-table-defer-url.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\defer-url\\bootstrap-table-defer-url.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\editable\\bootstrap-table-editable.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\editable\\bootstrap-table-editable.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\editable\\bootstrap-table-editable.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\editable\\bootstrap-table-editable.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\export\\bootstrap-table-export.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\export\\bootstrap-table-export.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\export\\bootstrap-table-export.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\export\\bootstrap-table-export.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\filter-control\\bootstrap-table-filter-control.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\filter-control\\bootstrap-table-filter-control.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\filter-control\\bootstrap-table-filter-control.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\filter-control\\bootstrap-table-filter-control.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\filter-control\\bootstrap-table-filter-control.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\filter-control\\bootstrap-table-filter-control.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\filter-control\\bootstrap-table-filter-control.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\filter-control\\bootstrap-table-filter-control.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\filter-control\\utils.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\filter-control\\utils.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\filter-control\\utils.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\filter-control\\utils.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\fixed-columns\\bootstrap-table-fixed-columns.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\fixed-columns\\bootstrap-table-fixed-columns.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\fixed-columns\\bootstrap-table-fixed-columns.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\fixed-columns\\bootstrap-table-fixed-columns.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\fixed-columns\\bootstrap-table-fixed-columns.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\fixed-columns\\bootstrap-table-fixed-columns.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\fixed-columns\\bootstrap-table-fixed-columns.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\fixed-columns\\bootstrap-table-fixed-columns.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\group-by-v2\\bootstrap-table-group-by.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\group-by-v2\\bootstrap-table-group-by.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\group-by-v2\\bootstrap-table-group-by.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\group-by-v2\\bootstrap-table-group-by.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\group-by-v2\\bootstrap-table-group-by.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\group-by-v2\\bootstrap-table-group-by.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\group-by-v2\\bootstrap-table-group-by.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\group-by-v2\\bootstrap-table-group-by.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\i18n-enhance\\bootstrap-table-i18n-enhance.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\i18n-enhance\\bootstrap-table-i18n-enhance.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\i18n-enhance\\bootstrap-table-i18n-enhance.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\i18n-enhance\\bootstrap-table-i18n-enhance.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\key-events\\bootstrap-table-key-events.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\key-events\\bootstrap-table-key-events.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\key-events\\bootstrap-table-key-events.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\key-events\\bootstrap-table-key-events.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\mobile\\bootstrap-table-mobile.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\mobile\\bootstrap-table-mobile.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\mobile\\bootstrap-table-mobile.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\mobile\\bootstrap-table-mobile.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\multiple-sort\\bootstrap-table-multiple-sort.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\multiple-sort\\bootstrap-table-multiple-sort.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\multiple-sort\\bootstrap-table-multiple-sort.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\multiple-sort\\bootstrap-table-multiple-sort.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\page-jump-to\\bootstrap-table-page-jump-to.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\page-jump-to\\bootstrap-table-page-jump-to.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\page-jump-to\\bootstrap-table-page-jump-to.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\page-jump-to\\bootstrap-table-page-jump-to.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\page-jump-to\\bootstrap-table-page-jump-to.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\page-jump-to\\bootstrap-table-page-jump-to.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\page-jump-to\\bootstrap-table-page-jump-to.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\page-jump-to\\bootstrap-table-page-jump-to.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\pipeline\\bootstrap-table-pipeline.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\pipeline\\bootstrap-table-pipeline.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\pipeline\\bootstrap-table-pipeline.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\pipeline\\bootstrap-table-pipeline.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\print\\bootstrap-table-print.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\print\\bootstrap-table-print.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\print\\bootstrap-table-print.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\print\\bootstrap-table-print.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\reorder-columns\\bootstrap-table-reorder-columns.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\reorder-columns\\bootstrap-table-reorder-columns.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\reorder-columns\\bootstrap-table-reorder-columns.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\reorder-columns\\bootstrap-table-reorder-columns.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\reorder-rows\\bootstrap-table-reorder-rows.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\reorder-rows\\bootstrap-table-reorder-rows.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\reorder-rows\\bootstrap-table-reorder-rows.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\reorder-rows\\bootstrap-table-reorder-rows.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\reorder-rows\\bootstrap-table-reorder-rows.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\reorder-rows\\bootstrap-table-reorder-rows.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\reorder-rows\\bootstrap-table-reorder-rows.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\reorder-rows\\bootstrap-table-reorder-rows.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\resizable\\bootstrap-table-resizable.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\resizable\\bootstrap-table-resizable.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\resizable\\bootstrap-table-resizable.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\resizable\\bootstrap-table-resizable.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\sticky-header\\bootstrap-table-sticky-header.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\sticky-header\\bootstrap-table-sticky-header.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\sticky-header\\bootstrap-table-sticky-header.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\sticky-header\\bootstrap-table-sticky-header.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\sticky-header\\bootstrap-table-sticky-header.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\sticky-header\\bootstrap-table-sticky-header.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\sticky-header\\bootstrap-table-sticky-header.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\sticky-header\\bootstrap-table-sticky-header.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\toolbar\\bootstrap-table-toolbar.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\toolbar\\bootstrap-table-toolbar.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\toolbar\\bootstrap-table-toolbar.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\toolbar\\bootstrap-table-toolbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\treegrid\\bootstrap-table-treegrid.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\treegrid\\bootstrap-table-treegrid.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\extensions\\treegrid\\bootstrap-table-treegrid.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\extensions\\treegrid\\bootstrap-table-treegrid.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\themes\\bootstrap-table\\bootstrap-table.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\themes\\bootstrap-table\\bootstrap-table.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\themes\\bootstrap-table\\bootstrap-table.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\themes\\bootstrap-table\\bootstrap-table.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\themes\\bootstrap-table\\bootstrap-table.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\themes\\bootstrap-table\\bootstrap-table.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\themes\\bootstrap-table\\bootstrap-table.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\themes\\bootstrap-table\\bootstrap-table.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\themes\\bootstrap-table\\fonts\\bootstrap-table.eot",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\themes\\bootstrap-table\\fonts\\bootstrap-table.eot"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\themes\\bootstrap-table\\fonts\\bootstrap-table.svg",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\themes\\bootstrap-table\\fonts\\bootstrap-table.svg"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\themes\\bootstrap-table\\fonts\\bootstrap-table.ttf",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\themes\\bootstrap-table\\fonts\\bootstrap-table.ttf"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap-table\\themes\\bootstrap-table\\fonts\\bootstrap-table.woff",
+      "PackagePath": "staticwebassets\\lib\\bootstrap-table\\themes\\bootstrap-table\\fonts\\bootstrap-table.woff"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\jquery-validate\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\jquery-validate\\localization\\messages_tr.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validate\\localization\\messages_tr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\moment.js\\moment-with-locales.min.js",
+      "PackagePath": "staticwebassets\\lib\\moment.js\\moment-with-locales.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\moment.js\\moment-with-locales.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\moment.js\\moment-with-locales.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\popper.js\\umd\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\popper.js\\umd\\popper.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\popper.js\\umd\\popper.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\dist\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\sweetalert2\\dist\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\dist\\sweetalert2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\tempus-dominus\\css\\tempus-dominus.min.css",
+      "PackagePath": "staticwebassets\\lib\\tempus-dominus\\css\\tempus-dominus.min.css"
+    },
+    {
+      "Id": "C:\\Users\\etame\\OneDrive\\Masaüstü\\AracKiralama\\AracKiralama\\wwwroot\\lib\\tempus-dominus\\js\\tempus-dominus.min.js",
+      "PackagePath": "staticwebassets\\lib\\tempus-dominus\\js\\tempus-dominus.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.AracKiralama.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.AracKiralama.props",
+      "PackagePath": "build\\AracKiralama.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.AracKiralama.props",
+      "PackagePath": "buildMultiTargeting\\AracKiralama.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.AracKiralama.props",
+      "PackagePath": "buildTransitive\\AracKiralama.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

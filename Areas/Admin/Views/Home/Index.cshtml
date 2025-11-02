@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Anasayfa";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <div class="fs-3">Dashboard</div>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-end">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-info">
+                    <div class="inner">
+                        <h3>@ViewData["ArabaSayisi"]</h3>
+                        <p>Toplam Araba</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-car-side"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-success">
+                    <div class="inner">
+                        <h3>@ViewData["MusteriSayisi"]</h3>
+                        <p>Toplam Müşteri</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="small-box bg-warning">
+                    <div class="inner">
+                        <h3>@ViewData["KiradakiAraba"]</h3>
+                        <p>Kiradaki Araba</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+            </div>
+        </div>
+    </div>
+</div>

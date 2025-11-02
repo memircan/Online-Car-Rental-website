@@ -1,0 +1,140 @@
+﻿@model KiraVM
+<div class="modal-header">
+    <h5 class="modal-title">Araç Kirala</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <form id="form-kirala">
+        <input type="hidden" value="@Model.ArabaId" id="input-araba-id" asp-for="ArabaId" />
+        <div class="mb-3">
+            <label for="input-plaka" class="form-label">Plaka</label>
+            <input type="text" class="form-control" id="input-plaka" asp-for="Araba.Plaka" readonly>
+            <span asp-validation-for="Araba.Plaka" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="input-marka" class="form-label">Marka</label>
+            <input type="text" class="form-control" id="input-marka" asp-for="Araba.Marka" readonly>
+            <span asp-validation-for="Araba.Marka" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="input-model" class="form-label">Model</label>
+            <input type="text" class="form-control" id="input-model" asp-for="Araba.Model" readonly>
+            <span asp-validation-for="Araba.Model" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Müşteri</label>
+            <select class="form-select" asp-for="MusteriId">
+                @foreach (var item in (ViewData["Musteriler"] as List<MusteriVM>))
+                {
+                     <option value="@item.Id">@(item.Adi + " " + item.Soyadi)</option>
+                }
+            </select>
+            <span asp-validation-for="MusteriId" class="text-danger"></span>
+        </div>
+        <div class='mb-3'>
+            <label for='linkedPickers1Input' class='form-label'>Başlangıç Tarihi</label>
+            <div class='input-group log-event'
+                 id='linkedPickers1'
+                 data-td-target-input='nearest'
+                 data-td-target-toggle='nearest'>
+                <span class='input-group-text'
+                      data-td-target='#linkedPickers1'
+                      data-td-toggle='datetimepicker'>
+                    <span class='fa-solid fa-calendar'></span>
+                </span>
+                <input id='linkedPickers1Input'
+                       type='text'
+                       class='form-control'
+                       data-td-target='#linkedPickers1' asp-for="BaslangicTarihi" />
+            </div>
+        </div>
+        <div class='mb-3'>
+            <label for='linkedPickers2Input' class='form-label'>Bitiş Tarihi</label>
+            <div class='input-group log-event'
+                 id='linkedPickers2'
+                 data-td-target-input='nearest'
+                 data-td-target-toggle='nearest'>
+                <span class='input-group-text'
+                      data-td-target='#linkedPickers2'
+                      data-td-toggle='datetimepicker'>
+                    <span class='fa-solid fa-calendar'></span>
+                </span>
+                <input id='linkedPickers2Input'
+                       type='text'
+                       class='form-control'
+                       data-td-target='#linkedPickers2' asp-for="BitisTarihi" />
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="input-tutar" class="form-label">Tutar</label>
+            <input type="text" class="form-control" id="input-tutar" asp-for="Tutar">
+            <span asp-validation-for="Tutar" class="text-danger"></span>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            <button type="submit" class="btn btn-primary">Aracı Kirala</button>
+        </div>
+    </form>
+</div>
+<link href="~/lib/tempus-dominus/css/tempus-dominus.min.css" rel="stylesheet">
+<script src="~/lib/popper.js/umd/popper.min.js"></script>
+<script src="~/lib/tempus-dominus/js/tempus-dominus.min.js"></script>
+<script src="~/lib/moment.js/moment-with-locales.min.js"></script>
+<script>
+    moment.locale('tr');
+
+    const linkedPicker1Element = document.getElementById('linkedPickers1');
+    const linked1 = new tempusDominus.TempusDominus(linkedPicker1Element, {
+        display:{
+            icons: {
+                time: 'fa-regular fa-clock',
+                date: 'fa-solid fa-calendar-days'
+            },
+            components:{
+                useTwentyfourHour:true
+            },
+            buttons:{
+                today: true
+            }
+        },
+        localization: {
+            dayViewHeaderFormat: { month: 'long', year: 'numeric' },
+            startOfTheWeek: 1
+        }
+    });
+    const linked2 = new tempusDominus.TempusDominus(document.getElementById('linkedPickers2'), {
+        useCurrent: false,
+        display:{
+            icons: {
+                time: 'fa-regular fa-clock',
+                date: 'fa-solid fa-calendar-days'
+            },
+            components:{
+                useTwentyfourHour:true
+            },
+            buttons:{
+                today: true
+            }
+        },
+        localization: {
+            dayViewHeaderFormat: { month: 'long', year: 'numeric' },
+            startOfTheWeek: 1
+        }
+    });
+
+    linkedPicker1Element.addEventListener(tempusDominus.Namespace.events.change, (e) => {
+      linked2.updateOptions({
+        restrictions: {
+          minDate: e.detail.date
+        }
+      });
+    });
+
+    const subscription = linked2.subscribe(tempusDominus.Namespace.events.change, (e) => {
+      linked1.updateOptions({
+        restrictions: {
+          maxDate: e.date
+        }
+      });
+    });
+</script>

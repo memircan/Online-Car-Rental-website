@@ -1,0 +1,285 @@
+﻿@model List<ArabaVM>
+@{
+    ViewData["Title"] = "Araba Listesi";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <div class="fs-3">Araba Listesi</div>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-end">
+                    <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Araba Listesi</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="btn-toolbar">
+                            <a class="btn btn-success btn-labeled me-2" asp-action="ekle">
+                                <span class="btn-label"><i class="fa-solid fa-plus"></i></span>
+                                Yeni Araba Ekle
+                            </a>
+                        </div>
+                        <table id="table"
+                               data-toggle="table"
+                               data-toolbar=".btn-toolbar"
+                               data-buttons-align="left"
+                               data-search="true"
+                               data-show-search-clear-button="true"
+                               data-id-field="id"
+                               data-unique-id="id"
+                               data-locale="tr-TR">
+                            <thead>
+                                <tr>
+                                    <th data-field="id" data-visible="false">Id</th>
+                                    <th data-field="marka" data-sortable="true">Marka</th>
+                                    <th data-field="model" data-sortable="true">Model</th>
+                                    <th data-field="yil" data-sortable="true" data-width="80">Yıl</th>
+                                    <th data-field="yakit" data-sortable="true">Yakıt Tipi</th>
+                                    <th data-field="vites" data-sortable="true">Vites</th>
+                                    <th data-field="km" data-sortable="true" data-width="100">Kilometre (KM)</th>
+                                    <th data-field="kasa" data-sortable="true">Kasa Tipi</th>
+                                    <th data-field="cekis" data-sortable="true">Çekiş Tipi</th>
+                                    <th data-field="renk" data-sortable="true">Renk</th>
+                                    <th data-field="operate" data-events="operateEvents" data-align="center" data-width="100"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Marka</td>
+                                        <td>@item.Model</td>
+                                        <td>@item.Yil</td>
+                                        <td>
+                                            @{
+                                                switch (item.YakitTipi)
+                                                {
+                                                    case 0:
+                                                        <text>Benzin</text>
+                                                        break;
+                                                    case 1:
+                                                        <text>Dizel</text>
+                                                        break;
+                                                    case 2:
+                                                        <text>LPG</text>
+                                                        break;
+                                                    case 3:
+                                                        <text>Hybrid</text>
+                                                        break;
+                                                    case 4:
+                                                        <text>Elektrik</text>
+                                                        break;
+                                                    default: break;
+                                                }
+                                            }
+                                        </td>
+                                        <td>
+                                            @{
+                                                switch (item.Vites)
+                                                {
+                                                    case 0:
+                                                        <text>Manuel</text>
+                                                        break;
+                                                    case 1:
+                                                        <text>Yarı Otomatik</text>
+                                                        break;
+                                                    case 2:
+                                                        <text>Otomatik</text>
+                                                        break;
+                                                    default: break;
+                                                }
+                                            }
+                                        </td>
+                                        <td>@item.Kilometre</td>
+                                        <td>
+                                            @{
+                                                switch (item.KasaTipi)
+                                                {
+                                                    case 0:
+                                                        <text>Cabrio</text>
+                                                        break;
+                                                    case 1:
+                                                        <text>Coupe</text>
+                                                        break;
+                                                    case 2:
+                                                        <text>Hatchback</text>
+                                                        break;
+                                                    case 3:
+                                                        <text>Sedan</text>
+                                                        break;
+                                                    case 4:
+                                                        <text>Station Wagon</text>
+                                                        break;
+                                                    default: break;
+                                                }
+                                            }
+                                        </td>
+                                        <td>
+                                            @{
+                                                switch (item.CekisTipi)
+                                                {
+                                                    case 0:
+                                                        <text>Önden Çekiş</text>
+                                                        break;
+                                                    case 1:
+                                                        <text>Arkadan İtiş</text>
+                                                        break;
+                                                    case 2:
+                                                        <text>4WD</text>
+                                                        break;
+                                                    default: break;
+                                                }
+                                            }
+                                        </td>
+                                        <td>
+                                            @{
+                                                switch (item.Renk)
+                                                {
+                                                    case 0:
+                                                        <text>Bej</text>
+                                                        break;
+                                                    case 1:
+                                                        <text>Beyaz</text>
+                                                        break;
+                                                    case 2:
+                                                        <text>Bordo</text>
+                                                        break;
+                                                    case 3:
+                                                        <text>Füme</text>
+                                                        break;
+                                                    case 4:
+                                                        <text>Gri</text>
+                                                        break;
+                                                    case 5:
+                                                        <text>Gümüş Gri</text>
+                                                        break;
+                                                    case 6:
+                                                        <text>Kahverengi</text>
+                                                        break;
+                                                    case 7:
+                                                        <text>Kırmızı</text>
+                                                        break;
+                                                    case 8:
+                                                        <text>Lacivert</text>
+                                                        break;
+                                                    case 9:
+                                                        <text>Mavi</text>
+                                                        break;
+                                                    case 10:
+                                                        <text>Mor</text>
+                                                        break;
+                                                    case 11:
+                                                        <text>Pembe</text>
+                                                        break;
+                                                    case 12:
+                                                        <text>Sarı</text>
+                                                        break;
+                                                    case 13:
+                                                        <text>Siyah</text>
+                                                        break;
+                                                    case 14:
+                                                        <text>Turkuaz</text>
+                                                        break;
+                                                    case 15:
+                                                        <text>Turuncu</text>
+                                                        break;
+                                                    case 16:
+                                                        <text>Yeşil</text>
+                                                        break;
+                                                    default: break;
+                                                }
+                                            }
+                                        </td>
+                                        <td>
+                                            <a class="btn-duzenle me-3" href="@Url.Action("duzenle", "araba", new { id = item.Id })" title="Düzenle" style="cursor:pointer;">
+                                                <i class="fa-solid fa-pen-to-square fa-fw"></i>
+                                            </a>
+                                            <a class="btn-sil text-danger" style="cursor:pointer;" title="Sil">
+                                                <i class="fa-solid fa-trash-can fw-fw"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Styles {
+<link href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="~/lib/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<style>
+    .btn-toolbar button:focus {
+        box-shadow: none;
+    }
+</style>
+}
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+<script src="~/lib/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="~/lib/bootstrap-table/bootstrap-table-locale-all.min.js"></script>
+<script src="~/lib/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script>
+    var $table = $('#table');
+
+    window.operateEvents = {
+        'click .btn-sil': function (e, value, row, index) {
+            Swal.fire({
+                title: 'Emin misiniz?',
+                html: '<strong>"' + row.marka + ' ' + row.model + ' ' + row.yil + '"</strong> model araba kalıcı olarak silinecektir.<br/><br/>Bu işlemi gerçekleştirmek istiyor musunuz?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#198754',
+                denyButtonColor: '#d33',
+                confirmButtonText: '<i class="fa-regular fa-trash-can fa-fw"></i> Evet, sil!',
+                focusConfirm: false,
+                cancelButtonText: 'İptal',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("sil")',
+                        data: {
+                            id: row.id
+                        },
+                        success: function (result) {
+                            if (result.isValid) {
+                                Swal.fire(
+                                    {
+                                    title: 'İşlem Başarılı!',
+                                    html: '<strong>"' + row.marka + ' ' + row.model + ' ' + row.yil + '"</strong> model araba kalıcı olarak silindi.',
+                                    confirmButtonText: '<i class="fa-solid fa-thumbs-up fa-fw"></i> Tamam!',
+                                    icon: 'success'
+                                }).then(function () {
+                                    $table.bootstrapTable('removeByUniqueId', row.id)
+                                });
+                            }
+                            else {
+                                Swal.fire(
+                                    'Hata Oluştu!',
+                                    result.errorMessage,
+                                    'error'
+                                )
+                            }
+                        }
+                    });
+                }
+            })
+        },
+    }
+</script>
+}

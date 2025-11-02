@@ -1,0 +1,54 @@
+﻿@model KullaniciVM
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giriş Yap - Araç Kiralama</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="~/lib/adminlte/css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="card card-outline card-primary">
+            <div class="card-header text-center">
+                <a class="h1">Giriş Yap</a>
+            </div>
+            <div class="card-body">
+                <p class="login-box-msg">Oturumunuzu başlatmak için giriş yapın</p>
+                <form asp-action="girisyap">
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text" id="input-kullanici-adi"><i class="fa-solid fa-user fa-fw"></i></span>
+                            <input type="text" class="form-control" asp-for="KullaniciAdi" placeholder="Kullanıcı Adı" aria-label="Kullanıcı Adı" aria-describedby="input-kullanici-adi">
+                        </div>
+                        <span asp-validation-for="KullaniciAdi" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text" id="input-sifre"><i class="fa-solid fa-key fa-fw"></i></span>
+                            <input type="password" class="form-control" asp-for="Sifre" placeholder="Şifre" aria-label="Şifre" aria-describedby="input-sifre">
+                        </div>
+                        <span asp-validation-for="Sifre" class="text-danger"></span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="input-hatirla" asp-for="BeniHatirla">
+                            <label class="form-check-label" for="input-hatirla">Beni Hatırla</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Giriş Yap</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/adminlte/js/adminlte.min.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+</body>
+</html>

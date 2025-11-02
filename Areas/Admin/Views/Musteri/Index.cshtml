@@ -1,0 +1,160 @@
+﻿@model List<MusteriVM>
+@{
+    ViewData["Title"] = "Müşteri Listesi";
+}
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <div class="fs-3">Müşteri Listesi</div>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-end">
+                    <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Müşteri Listesi</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="btn-toolbar">
+                            <a class="btn btn-success btn-labeled me-2" asp-action="ekle">
+                                <span class="btn-label"><i class="fa-solid fa-plus"></i></span>
+                                Yeni Müşteri Ekle
+                            </a>
+                        </div>
+                        <table id="table"
+                               data-toggle="table"
+                               data-toolbar=".btn-toolbar"
+                               data-buttons-align="left"
+                               data-search="true"
+                               data-show-search-clear-button="true"
+                               data-detail-view="true"
+                               data-detail-formatter="detailFormatter"
+                               data-id-field="id"
+                               data-unique-id="id"
+                               data-locale="tr-TR">
+                            <thead>
+                                <tr>
+                                    <th data-field="id" data-visible="false">Id</th>
+                                    <th data-field="tc" data-sortable="true" data-width="150">T.C. Kimlik No</th>
+                                    <th data-field="adi" data-sortable="true">Adı</th>
+                                    <th data-field="soyadi" data-sortable="true">Soyadı</th>
+                                    <th data-field="tel" data-sortable="true" data-width="150">Tel No</th>
+                                    <th data-field="mail" data-sortable="true">E-Mail</th>
+                                    <th data-field="adres" data-visible="false">Adres</th>
+                                    <th data-field="ehliyetNo" data-sortable="true" data-width="150">Ehliyet No</th>
+                                    <th data-field="ehliyetTip" data-sortable="true" data-width="100">Ehliyet Türü</th>
+                                    <th data-field="operate" data-events="operateEvents" data-align="center" data-width="100"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.TCKimlikNo</td>
+                                        <td>@item.Adi</td>
+                                        <td>@item.Soyadi</td>
+                                        <td>@item.TelNo</td>
+                                        <td>@item.Email</td>
+                                        <td>@item.Adres</td>
+                                        <td>@item.EhliyetNo</td>
+                                        <td>@item.EhliyetTuru</td>
+                                        <td>
+                                            <a class="btn-duzenle me-3" href="@Url.Action("duzenle", "musteri", new { id = item.Id })" title="Düzenle" style="cursor:pointer;">
+                                                <i class="fa-solid fa-pen-to-square fa-fw"></i>
+                                            </a>
+                                            <a class="btn-sil text-danger" style="cursor:pointer;" title="Sil">
+                                                <i class="fa-solid fa-trash-can fw-fw"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Styles {
+<link href="~/lib/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="~/lib/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<style>
+    .btn-toolbar button:focus {
+        box-shadow: none;
+    }
+</style>
+}
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+<script src="~/lib/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="~/lib/bootstrap-table/bootstrap-table-locale-all.min.js"></script>
+<script src="~/lib/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script>
+    var $table = $('#table');
+
+    function detailFormatter(index, row) {
+        var html = []
+        $.each(row, function (key, value) {
+            if(key === 'adres')
+                html.push('<p class="mb-0"><b>Adres:</b> ' + value + '</p>')
+        })
+        return html.join('')
+    }
+
+    window.operateEvents = {
+        'click .btn-sil': function (e, value, row, index) {
+            Swal.fire({
+                title: 'Emin misiniz?',
+                html: '<strong>"' + row.adi + ' ' + row.soyadi + '"</strong> isimli müşteri kalıcı olarak silinecektir.<br/><br/>Bu işlemi gerçekleştirmek istiyor musunuz?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#198754',
+                denyButtonColor: '#d33',
+                confirmButtonText: '<i class="fa-regular fa-trash-can fa-fw"></i> Evet, sil!',
+                focusConfirm: false,
+                cancelButtonText: 'İptal',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("sil")',
+                        data: {
+                            id: row.id
+                        },
+                        success: function (result) {
+                            if (result.isValid) {
+                                Swal.fire(
+                                    {
+                                    title: 'İşlem Başarılı!',
+                                    html: '<strong>"' + row.adi + ' ' + row.soyadi + '"</strong> isimli müşteri kalıcı olarak silindi.',
+                                    confirmButtonText: '<i class="fa-solid fa-thumbs-up fa-fw"></i> Tamam!',
+                                    icon: 'success'
+                                }).then(function () {
+                                    $table.bootstrapTable('removeByUniqueId', row.id)
+                                });
+                            }
+                            else {
+                                Swal.fire(
+                                    'Hata Oluştu!',
+                                    result.errorMessage,
+                                    'error'
+                                )
+                            }
+                        }
+                    });
+                }
+            })
+        },
+    }
+</script>
+}

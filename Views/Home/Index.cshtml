@@ -1,0 +1,233 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <title>Anasayfa - Araç Kiralama</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">Araç<em> Kiralama</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="/" class="active">Anasayfa</a></li>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li><a asp-controller="home" asp-action="index" asp-area="admin">Yönetim Paneli</a></li>
+                                <li><a asp-controller="kullanici" asp-action="cikisYap">Çıkış Yap</a></li>
+                            }
+                            else
+                            {
+                                <li><a asp-controller="kullanici" asp-action="girisYap">Giriş Yap</a></li>
+                            }
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <video autoplay muted loop id="bg-video">
+            <source src="~/img/video.mp4" type="video/mp4" />
+        </video>
+        <div class="video-overlay header-text">
+            <div class="caption">
+                <h6>Kalitenin Adresi</h6>
+                <h2><em>Araç Kirala</em> düşük fiyatla</h2>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+    <!-- ***** Offers Starts ***** -->
+    <section class="section" id="trainers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Fırsatlar <em>Dünyası</em></h2>
+                        <img src="~/img/line-dec.png" alt="">
+                        <p>seyahatinizi unutulmaz kılmak için mümkün olan her şeyi yapıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img src="~/img/offer-1-720x480.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>günlük <sup>₺</sup>120'den başlayan fiyatlarla</span>
+                            <h4>Sedan araçlarda inanılmaz kampanyalar</h4>
+                            <p> 4 veya daha fazla oturma yeri olan 2 veya 4 kapılı, sabit şaseli veya orta kolonlu, 4 veya daha fazla penceresi olan kapalı binek taşıtlar ile hizmet vermekteyiz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img src="~/img/offer-2-720x480.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>günlük <sup>₺</sup>150 başlayan fiyatlarla</span>
+                            <h4>suv araçlar da aksiyonun keyfini çıkarın</h4>
+                            <p>Sport Utility Vehicle Şehir içi kullanıma uygun dört çeker araçlar ile hizmet vermekteyiz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trainer-item">
+                        <div class="image-thumb">
+                            <img src="~/img/offer-3-720x480.jpg" alt="">
+                        </div>
+                        <div class="down-content">
+                            <span>from <sup>$</sup>120 per weekend</span>
+                            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                            <p>Yandan görünümü Sedan otomobiller gibi olan, yani bagaj çıkıntısı olan, fakat arka camı ile bagaj kapağı tek parça olan ve bagajı kabine dahil olan modeller (deyim yerinde ise Sedan görünümlü Hatchback.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Offers Ends ***** -->
+    <section class="section section-bg" id="schedule" style="background-image: url(~/img/about-fullscreen-1-1920x700.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading dark-bg">
+                        <h2>BİZİ <em>OKUYUN</em></h2>
+                        <img src="~/img/line-dec.png" alt="">
+                        <p>Oto kiralama acentesi, genellikle birkaç saat ila birkaç hafta arasında değişen kısa süreler için otomobil kiralayan bir şirkettir. Genellikle birden çok yerel şubeden oluşurlar ve müşterilerinin kiraladıkları araçları farklı bir şubeye teslim etmesine olanak sağlarlar..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-content text-center">
+                        <p>  Araba kiralamayı isteyen kişiler, rent a car firmalarına gitmeden önce bazı noktalara uygun olmaları gerekmektedir. Bu şartları bilmeden araç kiralama işlemi yaparsanız, tatiliniz boşa gidebilir.</p>
+
+                        <p>Araç kiralarken, ehliyet süresi de çok önemlidir. Araç kiralayacağınız zaman asgari 1 yıllık çoğu zamanda asgari 2 yıllık ehliyete sahip olmanız gerekmektedir. Orta sınıf ya da üst sınıf araçları kiralayacağınız zaman en az 2 yıllık ehliyete sahip olma şartı vardır. Fakat lüks ya da büyük bir araç kiralayacaksanız, bu süre 3 yıl olarak belirlenmiştir !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials Item Start ***** -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading">
+                        <h2>Müşteri <em>Yorumları</em></h2>
+                        <img src="~/img/line-dec.png" alt="waves">
+                        <p>Hayatınızın en iyi anları için!</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="~/img/features-first-icon.png" alt="First One">
+                            </div>
+                            <div class="right-content">
+                                <h4>AHMET k***</h4>
+                                <p><em>"Havalimanından aracınızı alıp bıraktığımız ana kadar süper bir tatildi, aracın sorunsuz olması en büyük memnuniyetimiz oldu."</em></p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="~/img/features-first-icon.png" alt="second one">
+                            </div>
+                            <div class="right-content">
+                                <h4>nermin s***</h4>
+                                <p><em>"internet üzerinden araç talebinde bulundum fakat endişeliydim havaalanına indiğimizde aracımız bizi bekliyordu, memnun kaldık bize sorunsuz bir tatil yaşattıkları için teşekkürler"</em></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="features-items">
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="~/img/features-first-icon.png" alt="fourth muscle">
+                            </div>
+                            <div class="right-content">
+                                <h4>Sude Gü***</h4>
+                                <p><em>"Sizlerin ve ekibinizin göstermiş olduğunuz ilgiye çok teşekkür ediyorum,  hiç düşünmeden sizleri seçeceğimi ve iş arkadaşı çevreme de tavsiyelerde bulunacağım."</em></p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="left-icon">
+                                <img src="~/img/features-first-icon.png" alt="training fifth">
+                            </div>
+                            <div class="right-content">
+                                <h4>Caner k***</h4>
+                                <p><em>"Uzun zamandır kullandığımız hizmetten çok memnunuz, teşekkürler."</em></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials Item End ***** -->
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Telif hakkı © kullukçu Araç Kiralama aittir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="~/js/scrollreveal.min.js"></script>
+    <script src="~/js/waypoints.min.js"></script>
+    <script src="~/js/jquery.counterup.min.js"></script>
+    <script src="~/js/imgfix.min.js"></script>
+    <script src="~/js/mixitup.js"></script>
+    <script src="~/js/accordions.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

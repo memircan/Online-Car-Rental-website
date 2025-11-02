@@ -1,0 +1,89 @@
+﻿@model ArabaVM
+<div class="mb-3">
+    <label for="input-plaka" class="form-label">Plaka</label>
+    <input type="text" class="form-control" id="input-plaka" asp-for="Plaka">
+    <span asp-validation-for="Plaka" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label for="input-marka" class="form-label">Marka</label>
+    <input type="text" class="form-control" id="input-marka" asp-for="Marka">
+    <span asp-validation-for="Marka" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label for="input-model" class="form-label">Model</label>
+    <input type="text" class="form-control" id="input-model" asp-for="Model">
+    <span asp-validation-for="Model" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label for="input-yil" class="form-label">Yıl</label>
+    <input type="text" class="form-control" id="input-yil" asp-for="Yil">
+    <span asp-validation-for="Yil" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label class="form-label">Yakıt Tipi</label>
+    <select class="form-select" asp-for="YakitTipi">
+        <option value="0">Benzin</option>
+        <option value="1">Dizel</option>
+        <option value="2">LPG</option>
+        <option value="3">Hybrid</option>
+        <option value="4">Elektrik</option>
+    </select>
+    <span asp-validation-for="YakitTipi" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label class="form-label">Vites</label>
+    <select class="form-select" asp-for="Vites">
+        <option value="0">Manuel</option>
+        <option value="1">Yarı Otomatik</option>
+        <option value="2">Otomatik</option>
+    </select>
+    <span asp-validation-for="Vites" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label for="input-km" class="form-label">Kilometre (KM)</label>
+    <input type="text" class="form-control" id="input-km" asp-for="Kilometre">
+    <span asp-validation-for="Kilometre" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label class="form-label">Kasa Tipi</label>
+    <select class="form-select" asp-for="KasaTipi">
+        <option value="0">Cabrio</option>
+        <option value="1">Coupe</option>
+        <option value="2">Hatchback</option>
+        <option value="3">Sedan</option>
+        <option value="3">Station Wagon</option>
+    </select>
+    <span asp-validation-for="KasaTipi" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label class="form-label">Çekiş</label>
+    <select class="form-select" asp-for="CekisTipi">
+        <option value="0">Önden Çekiş</option>
+        <option value="1">Arkadan İtiş</option>
+        <option value="2">4WD</option>
+    </select>
+    <span asp-validation-for="CekisTipi" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label class="form-label">Renk</label>
+    <select class="form-select" asp-for="Renk">
+        <option value="0">Bej</option>
+        <option value="1">Beyaz</option>
+        <option value="2">Bordo</option>
+        <option value="3">Füme</option>
+        <option value="4">Gri</option>
+        <option value="5">Gümüş Gri</option>
+        <option value="6">Kahverengi</option>
+        <option value="7">Kırmızı</option>
+        <option value="8">Lacivert</option>
+        <option value="9">Mavi</option>
+        <option value="10">Mor</option>
+        <option value="11">Pembe</option>
+        <option value="12">Sarı</option>
+        <option value="13">Siyah</option>
+        <option value="14">Turkuaz</option>
+        <option value="15">Turuncu</option>
+        <option value="16">Yeşil</option>
+    </select>
+    <span asp-validation-for="Renk" class="text-danger"></span>
+</div>
